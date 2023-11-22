@@ -204,7 +204,6 @@ export class PlasmicAction {
     switch (platform) {
       case "nextjs":
         await exec(`${pm.cmd} next build`, this.opts);
-        await exec(`${pm.cmd} next export`, this.opts);
         dir = "out";
         break;
       case "gatsby":
